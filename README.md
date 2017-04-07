@@ -21,8 +21,8 @@ File names (when a new file is uploaded) are stored at the master server using t
 
 The principle advantage of using trie (over a binary search tree/hash table) is that:
 
-*Looking up data in a trie is faster (prefix based search).
-*A trie can provide an alphabetical ordering of the entries by key.
+* Looking up data in a trie is faster (prefix based search).
+* A trie can provide an alphabetical ordering of the entries by key.
 
 Any new file name such as geo_node_one is first broken down into contiguous strings 'geo','node' & 'one' using regular expression (Regex) "([A-Za-z])\w+". Each string is now stored in the trie and the final letter of each string points eg. o(geo), e(node), e(one) points to the filename it was derived from eg. geo_node_one. 
 
@@ -30,10 +30,13 @@ This improves search speed. All filenames containing a particular search query c
 
 ![A trie](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Trie_example.svg/250px-Trie_example.svg.png)
 
+
+
 ###### Progress
 
-- [x] Network modules constructed (master, server, client) 
-- [x] Trie module implemented
+- [x] Network modules constructed (master, server, client) and tested.
+- [x] Basic file upload and download tested.
+- [x] Trie module implemented. 
 - [ ] Caching of enteries at multiple nodes for performance
 - [ ] Incentives/penalties to foster collaboration 
 
