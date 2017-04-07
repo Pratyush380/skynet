@@ -10,5 +10,5 @@ We use a 3 layered network where
 2. Layer 2 : Peer Servers (servers in this layer have peer to peer connections)
 3. Layer 3 : Clients (connected to servers in layer 2)
 
-![Network Structure](https://github.com/Pratyush380/skynet/project_network.jpg)
+![Network Structure](https://github.com/Pratyush380/skynet/blob/master/project_network.jpg)
 
