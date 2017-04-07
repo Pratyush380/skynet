@@ -6,9 +6,11 @@
 
 ###### We use a 3 layered network where
 
-1. Layer 1 : Master Server
-2. Layer 2 : Peer Servers (servers in this layer have peer to peer connections)
-3. Layer 3 : Clients (connected to servers in layer 2)
+Layer | Description
+------------ | -------------
+Layer 1 | Master Server
+Layer 2 | Peer Servers (servers in this layer have peer to peer connections)
+Layer 3 | Clients (connected to servers in layer 2)
 
 ![Network Structure](https://github.com/Pratyush380/skynet/blob/master/project_network.jpg)
 The modules for the nodes of all three layers are constructed using Python. 
@@ -27,5 +29,11 @@ Any new file name such as geo_node_one is first broken down into contiguous stri
 This improves search speed. All filenames containing a particular search query can be listed since the final letter of the query will point to all filenames it is a part of. For multiple search queries filenames containing both search queries can be listed (ranked) first followed by the filenames containing only one search query. Precedence to search queries (and corresponding files) will be based on their alphabetical order, ordering withing all files corresponding to a particular search query is also alphabetical.  
 
 ![A trie](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Trie_example.svg/250px-Trie_example.svg.png)
-A trie for keys "A","to", "tea", "ted", "ten", "i", "in", and "inn".
+
+###### Progress
+
+- [x] Network modules constructed (master, server, client) 
+- [x] Trie module implemented
+- [ ] Caching of enteries at multiple nodes for performance
+- [ ] Incentives/penalties to foster collaboration 
 
