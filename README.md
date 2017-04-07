@@ -27,6 +27,6 @@ Any new file name such as geo_node_one is first broken down into contiguous stri
 
 This improves search speed. All filenames containing a particular search query can be listed since the final letter of the query will point to all filenames it is a part of. For multiple search queries filenames containing both search queries can be listed (ranked) first followed by the filenames containing only one search query. Precedence to search queries (and corresponding files) will be based on their alphabetical order, ordering withing all files corresponding to a particular search query is also alphabetical.  
 
-![A trie](https://en.wikipedia.org/wiki/Trie#/media/File:Trie_example.svg)
+![A trie](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Trie_example.svg/1200px-Trie_example.svg.png)
 A trie for keys "A","to", "tea", "ted", "ten", "i", "in", and "inn".
 
